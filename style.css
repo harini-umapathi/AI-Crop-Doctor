@@ -144,3 +144,444 @@ body { background-color: var(--bg-color); color: var(--dark-text); min-height: 1
 .chat-msg.bot { align-self: flex-start; background: var(--white); padding: 10px 14px; border-radius: 10px; box-shadow: var(--card-shadow); }
 .chat-msg.user { align-self: flex-end; background: var(--primary-green); color: var(--white); padding: 10px 14px; border-radius: 10px; }
 .chat-input-bar { display: flex; gap: 8px; }
+
+/* =========================================================
+   AI CROP DOCTOR — RESPONSIVE DESIGN
+   Add this at the VERY END of your existing style.css
+   Supports mobile, tablet, laptop and desktop
+========================================================= */
+
+/* Prevent horizontal overflow */
+html {
+    width: 100%;
+    overflow-x: hidden;
+    -webkit-text-size-adjust: 100%;
+}
+
+body {
+    width: 100%;
+    min-width: 320px;
+    overflow-x: hidden;
+}
+
+img,
+video,
+canvas,
+svg {
+    max-width: 100%;
+}
+
+input,
+select,
+textarea,
+button {
+    max-width: 100%;
+}
+
+/* Flexible application layout */
+.app-layout {
+    width: 100%;
+    min-width: 0;
+}
+
+.sidebar,
+.main-content {
+    min-width: 0;
+}
+
+.main-content {
+    width: 0;
+    flex: 1 1 auto;
+}
+
+.view-section {
+    min-width: 0;
+}
+
+.card {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.combined-upload-grid,
+.diagnosis-grid,
+.dashboard-stats-grid {
+    min-width: 0;
+}
+
+.combined-upload-grid > *,
+.diagnosis-grid > *,
+.dashboard-stats-grid > * {
+    min-width: 0;
+}
+
+/* Tablet and smaller laptops */
+@media (max-width: 1024px) {
+    .sidebar {
+        width: 220px;
+        flex-shrink: 0;
+        padding: 1rem;
+    }
+
+    .topbar {
+        padding: 1rem 1.25rem;
+    }
+
+    .view-section {
+        padding: 1.5rem;
+    }
+
+    .combined-upload-grid {
+        gap: 1rem;
+    }
+
+    .upload-box-side,
+    .upload-container {
+        padding: 1.5rem;
+    }
+}
+
+/* Tablets and large phones */
+@media (max-width: 768px) {
+    body {
+        display: block;
+    }
+
+    .app-layout {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    /* Sidebar becomes a horizontal navigation area.
+       Existing navigation links remain available. */
+    .sidebar {
+        width: 100%;
+        height: auto;
+        padding: 0.85rem 1rem;
+        border-right: none;
+        border-bottom: 1px solid var(--gray-light);
+        gap: 0.75rem;
+    }
+
+    .sidebar-brand {
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+    }
+
+    .sidebar-nav {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        gap: 0.5rem;
+        overflow-x: auto;
+        overflow-y: hidden;
+        padding-bottom: 0.4rem;
+        -webkit-overflow-scrolling: touch;
+    }
+
+    .nav-item {
+        flex: 0 0 auto;
+        white-space: nowrap;
+        padding: 0.7rem 0.85rem;
+    }
+
+    .sidebar-footer {
+        padding-top: 0.75rem;
+    }
+
+    .main-content {
+        width: 100%;
+        max-height: none;
+        min-height: 0;
+        overflow-y: visible;
+    }
+
+    .topbar {
+        padding: 0.85rem 1rem;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .topbar-right {
+        gap: 0.5rem;
+        flex-wrap: wrap;
+    }
+
+    .view-section {
+        padding: 1rem;
+    }
+
+    .welcome-banner {
+        padding: 1.5rem;
+    }
+
+    .dashboard-stats-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    .combined-upload-grid,
+    .diagnosis-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .upload-box-side,
+    .upload-container {
+        padding: 1.25rem;
+    }
+
+    .card {
+        padding: 1.15rem;
+    }
+
+    .auth-card {
+        width: calc(100% - 2rem);
+        padding: 1.5rem;
+    }
+
+    .form-row {
+        flex-wrap: wrap;
+    }
+
+    .form-row > * {
+        flex: 1 1 200px;
+        min-width: 0;
+    }
+
+    .chat-box {
+        height: min(45vh, 360px);
+        min-height: 220px;
+    }
+
+    .chat-msg {
+        max-width: 92%;
+        overflow-wrap: anywhere;
+    }
+
+    .chat-input-bar {
+        align-items: stretch;
+    }
+
+    .chat-input-bar input,
+    .chat-input-bar textarea {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+}
+
+/* Mobile phones */
+@media (max-width: 480px) {
+    body {
+        font-size: 14px;
+    }
+
+    .sidebar {
+        padding: 0.75rem;
+    }
+
+    .sidebar-brand {
+        gap: 8px;
+        font-size: 0.95rem;
+    }
+
+    .sidebar-logo {
+        width: 32px;
+        height: 32px;
+    }
+
+    .nav-item {
+        font-size: 0.82rem;
+        padding: 0.65rem 0.75rem;
+        gap: 8px;
+    }
+
+    .topbar {
+        padding: 0.75rem;
+    }
+
+    .topbar h1,
+    .topbar h2 {
+        font-size: 1.1rem;
+    }
+
+    .topbar-right {
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .view-section {
+        padding: 0.75rem;
+    }
+
+    .welcome-banner {
+        padding: 1.15rem;
+        border-radius: 12px;
+    }
+
+    .welcome-banner h1 {
+        font-size: 1.35rem;
+        line-height: 1.4;
+    }
+
+    .dashboard-stats-grid {
+        grid-template-columns: 1fr;
+        gap: 0.75rem;
+    }
+
+    .stat-card {
+        padding: 1rem;
+        gap: 10px;
+    }
+
+    .stat-icon {
+        width: 40px;
+        height: 40px;
+        flex-shrink: 0;
+    }
+
+    .card {
+        padding: 1rem;
+        margin-bottom: 1rem;
+        border-radius: 10px;
+    }
+
+    .combined-upload-grid {
+        grid-template-columns: minmax(0, 1fr);
+        gap: 0.85rem;
+    }
+
+    .upload-box-side,
+    .upload-container {
+        padding: 1rem 0.75rem;
+    }
+
+    .upload-box-side img,
+    #leaf-preview-img,
+    #soil-preview-img {
+        max-width: 100%;
+        max-height: 150px;
+        object-fit: contain;
+    }
+
+    .form-row {
+        flex-direction: column;
+        gap: 0.75rem;
+    }
+
+    .form-row > * {
+        flex: 1 1 auto;
+        width: 100%;
+    }
+
+    .form-control,
+    .form-group input,
+    .form-group select,
+    .form-group textarea {
+        font-size: 16px;
+        padding: 0.8rem;
+    }
+
+    .btn-primary,
+    .btn-secondary {
+        padding: 0.8rem 1rem;
+    }
+
+    .full-width {
+        width: 100%;
+    }
+
+    .flex-between {
+        align-items: flex-start;
+        gap: 0.75rem;
+        flex-wrap: wrap;
+    }
+
+    .chat-box {
+        height: 55vh;
+        min-height: 200px;
+        padding: 0.75rem;
+    }
+
+    .chat-msg {
+        max-width: 96%;
+        font-size: 0.9rem;
+    }
+
+    .chat-input-bar {
+        display: flex;
+        gap: 0.4rem;
+    }
+
+    .chat-input-bar button {
+        flex-shrink: 0;
+    }
+
+    .auth-card {
+        padding: 1.25rem;
+        border-radius: 12px;
+    }
+
+    .splash-logo {
+        width: 72px;
+        height: 72px;
+    }
+}
+
+/* Very small phones */
+@media (max-width: 360px) {
+    .view-section {
+        padding: 0.5rem;
+    }
+
+    .dashboard-stats-grid {
+        grid-template-columns: minmax(0, 1fr);
+    }
+
+    .card {
+        padding: 0.8rem;
+    }
+
+    .nav-item {
+        padding: 0.6rem;
+        font-size: 0.78rem;
+    }
+
+    .auth-card {
+        width: calc(100% - 1rem);
+        padding: 1rem;
+    }
+}
+
+/* Landscape mobile devices */
+@media (max-height: 500px) and (max-width: 900px) {
+    .splash-wrapper {
+        overflow-y: auto;
+        padding: 1rem;
+    }
+
+    .splash-logo {
+        width: 55px;
+        height: 55px;
+    }
+
+    .auth-wrapper {
+        overflow-y: auto;
+        align-items: flex-start;
+        padding: 1rem 0;
+    }
+
+    .chat-box {
+        height: 240px;
+    }
+}
+
+/* Respect reduced-motion accessibility preferences */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        scroll-behavior: auto !important;
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
