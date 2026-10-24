@@ -1,0 +1,962 @@
+{
+  "schema_version": 1,
+  "description": "Recommendations for all 38 exact PlantVillage-style model labels. Soil advice is general guidance and should be refined using measured pH, NPK, moisture, crop stage and local extension recommendations.",
+  "soil_types": [
+    "Alluvial soil",
+    "Black Soil",
+    "Clay soil",
+    "Red soil"
+  ],
+  "diseases": {
+    "Apple___Apple_scab": {
+      "name": {
+        "en": "Apple Scab"
+      },
+      "leaf_actions": {
+        "en": "Prune for airflow; remove and dispose of fallen infected leaves. Ask a local extension officer about locally registered preventive fungicides."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Prioritize drainage and avoid prolonged waterlogging."
+        },
+        "Black Soil": {
+          "en": "Maintain even moisture; use mulch without piling it against the trunk."
+        },
+        "Clay soil": {
+          "en": "Use compost to improve structure; irrigate at the root zone and avoid waterlogging."
+        },
+        "Red soil": {
+          "en": "Use compost/mulch to improve moisture retention; avoid overhead irrigation."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Apple___Black_rot": {
+      "name": {
+        "en": "Apple Black Rot"
+      },
+      "leaf_actions": {
+        "en": "Remove mummified fruit, dead wood and cankered branches; disinfect pruning tools and dispose of infected material safely."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Ensure drainage; remove infected debris from the orchard floor."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging; do not leave infected pruning debris on the soil."
+        },
+        "Clay soil": {
+          "en": "Improve drainage and use compost only as needed."
+        },
+        "Red soil": {
+          "en": "Use mulch to moderate moisture, but keep infected debris cleared."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Apple___Cedar_apple_rust": {
+      "name": {
+        "en": "Cedar Apple Rust"
+      },
+      "leaf_actions": {
+        "en": "Remove infected leaves where practical and seek local advice on alternate juniper hosts and preventive treatment timing."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Keep soil moisture even and monitor drainage."
+        },
+        "Black Soil": {
+          "en": "Avoid standing water around roots."
+        },
+        "Clay soil": {
+          "en": "Use organic matter to improve moisture retention; avoid letting trees become drought-stressed."
+        },
+        "Red soil": {
+          "en": "Use mulch and consistent irrigation to reduce moisture swings."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Apple___healthy": {
+      "name": {
+        "en": "Apple Healthy"
+      },
+      "leaf_actions": {
+        "en": "No disease treatment is needed; monitor leaves and prune for airflow."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Test soil and apply nutrients only according to results."
+        },
+        "Black Soil": {
+          "en": "Avoid compaction and waterlogging; maintain balanced nutrition."
+        },
+        "Clay soil": {
+          "en": "Add organic matter if needed and maintain even watering."
+        },
+        "Red soil": {
+          "en": "Use mulch/compost and test soil before fertilizing."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Blueberry___healthy": {
+      "name": {
+        "en": "Blueberry Healthy"
+      },
+      "leaf_actions": {
+        "en": "Monitor routinely for pests and symptoms. Blueberries need acidic soil; verify crop suitability and pH before amending."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Check pH first; blueberries often require strongly acidic soil, so do not add amendments without testing."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and confirm pH; heavy soil may need raised beds."
+        },
+        "Clay soil": {
+          "en": "Check pH and moisture; use organic mulch if suitable."
+        },
+        "Red soil": {
+          "en": "Check pH before planting; sandy soil may need organic matter and frequent light irrigation."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Cherry___Powdery_mildew": {
+      "name": {
+        "en": "Cherry Powdery Mildew"
+      },
+      "leaf_actions": {
+        "en": "Remove heavily affected material where practical; improve airflow and ask local extension staff about registered treatments."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Avoid excessive nitrogen; test before fertilizing."
+        },
+        "Black Soil": {
+          "en": "Avoid excessive nitrogen and waterlogging."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced nutrients and avoid excessive nitrogen."
+        },
+        "Red soil": {
+          "en": "Use compost carefully and avoid excess nitrogen that encourages soft growth."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Cherry___healthy": {
+      "name": {
+        "en": "Cherry Healthy"
+      },
+      "leaf_actions": {
+        "en": "Continue routine monitoring and pruning for airflow."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Maintain mulch and test nutrients periodically."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging and compaction."
+        },
+        "Clay soil": {
+          "en": "Use compost if needed to improve structure."
+        },
+        "Red soil": {
+          "en": "Mulch to conserve moisture and test soil before fertilizing."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Corn___Cercospora_leaf_spot Gray_leaf_spot": {
+      "name": {
+        "en": "Corn Gray Leaf Spot"
+      },
+      "leaf_actions": {
+        "en": "Use resistant hybrids where available; rotate crops and manage infected residues. Use only locally registered fungicides when advised."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Rotate away from corn and manage crop residue."
+        },
+        "Black Soil": {
+          "en": "Avoid repeated corn planting; manage residue and drainage."
+        },
+        "Clay soil": {
+          "en": "Rotate crops and maintain balanced fertility."
+        },
+        "Red soil": {
+          "en": "Rotate crops and avoid excess irrigation that prolongs leaf wetness."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Corn___Common_rust": {
+      "name": {
+        "en": "Corn Common Rust"
+      },
+      "leaf_actions": {
+        "en": "Scout for rust pustules; choose resistant hybrids and consult local extension advice if disease is spreading."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Maintain suitable plant spacing and avoid excessive nitrogen."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging; maintain balanced fertility."
+        },
+        "Clay soil": {
+          "en": "Maintain even moisture and balanced nutrition."
+        },
+        "Red soil": {
+          "en": "Avoid drought stress but irrigate at the root zone."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Corn___Northern_Leaf_Blight": {
+      "name": {
+        "en": "Corn Northern Leaf Blight"
+      },
+      "leaf_actions": {
+        "en": "Use resistant hybrids and rotate away from corn; manage infected residue. Seek local advice before fungicide use."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Rotate with non-host crops and manage infected residues."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and rotate crops; avoid planting corn continuously."
+        },
+        "Clay soil": {
+          "en": "Rotate crops and maintain balanced nutrients."
+        },
+        "Red soil": {
+          "en": "Rotate crops and avoid water stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Corn___healthy": {
+      "name": {
+        "en": "Corn Healthy"
+      },
+      "leaf_actions": {
+        "en": "Scout for pests and disease; maintain recommended spacing."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Use soil-test-based nutrients; split nitrogen according to local crop guidance."
+        },
+        "Black Soil": {
+          "en": "Avoid compaction and waterlogging; use soil-test-based nutrients."
+        },
+        "Clay soil": {
+          "en": "Add organic matter if needed; split fertilizer according to crop stage."
+        },
+        "Red soil": {
+          "en": "Maintain moisture and nutrients based on soil testing."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Grape___Black_rot": {
+      "name": {
+        "en": "Grape Black Rot"
+      },
+      "leaf_actions": {
+        "en": "Remove mummified berries and infected debris; improve canopy airflow and seek local advice on registered fungicides."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Remove fallen berries/leaves and maintain drainage."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging and clear infected debris."
+        },
+        "Clay soil": {
+          "en": "Use mulch carefully and remove infected debris."
+        },
+        "Red soil": {
+          "en": "Control weeds and remove infected debris; avoid drought stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Grape___Esca_(Black_Measles)": {
+      "name": {
+        "en": "Grape Esca / Black Measles"
+      },
+      "leaf_actions": {
+        "en": "This is a complex trunk disease. Prune in dry weather, protect wounds using locally recommended methods, and consult a viticulture specialist."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Avoid waterlogging and severe moisture stress."
+        },
+        "Black Soil": {
+          "en": "Improve drainage; avoid damaging roots."
+        },
+        "Clay soil": {
+          "en": "Maintain even moisture and balanced nutrition."
+        },
+        "Red soil": {
+          "en": "Use mulch and irrigation to avoid drought stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+      "name": {
+        "en": "Grape Leaf Blight"
+      },
+      "leaf_actions": {
+        "en": "Remove infected leaves and debris after harvest; improve airflow and consult local guidance on treatment."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Clear infected debris and maintain drainage."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging; remove crop debris."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced potassium only if soil tests indicate need."
+        },
+        "Red soil": {
+          "en": "Use mulch and steady irrigation; remove infected debris."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Grape___healthy": {
+      "name": {
+        "en": "Grape Healthy"
+      },
+      "leaf_actions": {
+        "en": "Maintain canopy airflow and monitor regularly."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Keep the root zone well drained."
+        },
+        "Black Soil": {
+          "en": "Avoid standing water; consider raised planting rows if needed."
+        },
+        "Clay soil": {
+          "en": "Add organic matter only as needed."
+        },
+        "Red soil": {
+          "en": "Use mulch to conserve moisture without keeping the root zone saturated."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Orange___Haunglongbing_(Citrus_greening)": {
+      "name": {
+        "en": "Citrus Greening / HLB"
+      },
+      "leaf_actions": {
+        "en": "There is no curative treatment. Contact local agricultural authorities promptly for diagnosis and guidance on psyllid management and removal rules; do not remove trees without checking local requirements."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Test pH and nutrients; correct deficiencies only on test/extension advice. Soil amendments do not cure HLB."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and correct measured nutrient deficiencies; soil care does not cure HLB."
+        },
+        "Clay soil": {
+          "en": "Maintain root health with test-based nutrition; soil care does not cure HLB."
+        },
+        "Red soil": {
+          "en": "Use mulch and test-based nutrients; soil care does not cure HLB."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Peach___Bacterial_spot": {
+      "name": {
+        "en": "Peach Bacterial Spot"
+      },
+      "leaf_actions": {
+        "en": "Avoid working among wet plants; use clean tools and ask local extension staff about locally registered copper products and timing."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Avoid overhead irrigation and maintain balanced fertility."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and avoid overhead watering."
+        },
+        "Clay soil": {
+          "en": "Maintain even moisture and balanced nutrients."
+        },
+        "Red soil": {
+          "en": "Irrigate at the root zone and avoid drought stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Peach___healthy": {
+      "name": {
+        "en": "Peach Healthy"
+      },
+      "leaf_actions": {
+        "en": "Continue seasonal pruning and routine monitoring."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Test nutrients periodically."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging and compaction."
+        },
+        "Clay soil": {
+          "en": "Use compost if needed to improve structure."
+        },
+        "Red soil": {
+          "en": "Use organic matter to improve water retention."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Pepper,_bell___Bacterial_spot": {
+      "name": {
+        "en": "Bell Pepper Bacterial Spot"
+      },
+      "leaf_actions": {
+        "en": "Use clean seed/transplants, remove severely affected plants, avoid handling wet foliage, and rotate away from pepper/tomato crops. Ask local extension staff about registered treatments."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Use mulch to reduce soil splash and rotate away from susceptible crops."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and use mulch to reduce splash; rotate crops."
+        },
+        "Clay soil": {
+          "en": "Use mulch and balanced fertility; rotate crops."
+        },
+        "Red soil": {
+          "en": "Use mulch and root-zone irrigation; rotate crops."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Pepper,_bell___healthy": {
+      "name": {
+        "en": "Bell Pepper Healthy"
+      },
+      "leaf_actions": {
+        "en": "Monitor for aphids, thrips and new leaf spots; keep tools clean."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Maintain even moisture and use soil-test-based fertilizer."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging; use raised beds if needed."
+        },
+        "Clay soil": {
+          "en": "Add organic matter if needed and irrigate consistently."
+        },
+        "Red soil": {
+          "en": "Use mulch and frequent appropriate irrigation; avoid nutrient overuse."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Potato___Early_blight": {
+      "name": {
+        "en": "Potato Early Blight"
+      },
+      "leaf_actions": {
+        "en": "Remove badly affected leaves where practical, rotate crops, maintain balanced nutrition and use locally registered fungicides only as advised."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Rotate crops and maintain balanced nitrogen/potassium based on soil tests."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging; use rotation and test-based balanced nutrients."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced nutrition and steady moisture."
+        },
+        "Red soil": {
+          "en": "Use organic matter and consistent irrigation; avoid nutrient deficiencies."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Potato___Late_blight": {
+      "name": {
+        "en": "Potato Late Blight"
+      },
+      "leaf_actions": {
+        "en": "Urgent: isolate the affected area, avoid moving through wet foliage, and contact local extension services promptly. Remove infected plants and use only locally registered late-blight measures as directed."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Avoid overhead irrigation and waterlogging; remove infected crop debris according to local guidance."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and avoid excess irrigation; seek urgent local advice."
+        },
+        "Clay soil": {
+          "en": "Maintain even moisture; do not rely on soil amendments to control late blight."
+        },
+        "Red soil": {
+          "en": "Avoid drought stress while keeping foliage dry; use root-zone irrigation."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Potato___healthy": {
+      "name": {
+        "en": "Potato Healthy"
+      },
+      "leaf_actions": {
+        "en": "Monitor for pests and leaf disease; use certified seed and rotate crops."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Maintain loose soil for tuber growth; check pH and nutrients by soil test."
+        },
+        "Black Soil": {
+          "en": "Avoid compaction and waterlogging; raised beds may help."
+        },
+        "Clay soil": {
+          "en": "Add organic matter if needed and maintain even moisture."
+        },
+        "Red soil": {
+          "en": "Use organic matter and consistent irrigation; avoid compaction."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Raspberry___healthy": {
+      "name": {
+        "en": "Raspberry Healthy"
+      },
+      "leaf_actions": {
+        "en": "Thin canes for airflow and monitor for pests and disease."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Maintain drainage and organic matter."
+        },
+        "Black Soil": {
+          "en": "Use raised beds if drainage is poor."
+        },
+        "Clay soil": {
+          "en": "Add organic matter if needed and maintain even moisture."
+        },
+        "Red soil": {
+          "en": "Mulch and irrigate appropriately; avoid drought stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Soybean___healthy": {
+      "name": {
+        "en": "Soybean Healthy"
+      },
+      "leaf_actions": {
+        "en": "Scout for leaf-feeding insects and disease; use crop rotation."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Ensure pH and phosphorus are suitable; avoid unnecessary nitrogen because soybean fixes nitrogen when nodulation is effective."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging and test phosphorus/pH."
+        },
+        "Clay soil": {
+          "en": "Maintain pH and phosphorus based on soil tests."
+        },
+        "Red soil": {
+          "en": "Use organic matter and maintain even moisture; test pH and phosphorus."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Squash___Powdery_mildew": {
+      "name": {
+        "en": "Squash Powdery Mildew"
+      },
+      "leaf_actions": {
+        "en": "Improve spacing and airflow; remove severely affected leaves when practical and seek local advice on registered treatments."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Avoid excessive nitrogen and crowding; maintain drainage."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging and excessive nitrogen."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced fertility and even moisture."
+        },
+        "Red soil": {
+          "en": "Use mulch and root-zone irrigation; avoid drought stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Strawberry___Leaf_scorch": {
+      "name": {
+        "en": "Strawberry Leaf Scorch"
+      },
+      "leaf_actions": {
+        "en": "Remove old affected leaves after harvest, improve airflow and consult local guidance on registered treatment if needed."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Avoid excess nitrogen and remove infected plant debris."
+        },
+        "Black Soil": {
+          "en": "Maintain drainage and avoid excessive nitrogen."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced fertility and even moisture."
+        },
+        "Red soil": {
+          "en": "Use mulch and avoid excess nitrogen that produces dense foliage."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Strawberry___healthy": {
+      "name": {
+        "en": "Strawberry Healthy"
+      },
+      "leaf_actions": {
+        "en": "Remove dead leaves/runners and monitor for disease; keep fruit off bare soil."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Use clean mulch and maintain drainage."
+        },
+        "Black Soil": {
+          "en": "Use raised beds or improve drainage if needed."
+        },
+        "Clay soil": {
+          "en": "Use mulch and balanced nutrition."
+        },
+        "Red soil": {
+          "en": "Add organic matter and mulch to conserve moisture."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Bacterial_spot": {
+      "name": {
+        "en": "Tomato Bacterial Spot"
+      },
+      "leaf_actions": {
+        "en": "Use clean seed/transplants, avoid handling wet plants, remove severely affected material and rotate away from tomato/pepper. Ask local extension staff about registered treatments."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Rotate away from tomato, pepper and eggplant; mulch to reduce soil splash."
+        },
+        "Black Soil": {
+          "en": "Improve drainage, mulch and rotate away from susceptible crops."
+        },
+        "Clay soil": {
+          "en": "Use mulch and crop rotation; avoid working when foliage is wet."
+        },
+        "Red soil": {
+          "en": "Use mulch and drip irrigation; rotate crops."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Early_blight": {
+      "name": {
+        "en": "Tomato Early Blight"
+      },
+      "leaf_actions": {
+        "en": "Remove lower affected leaves, mulch around plants, water at the base, rotate crops and use locally registered fungicides only as advised."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Use clean mulch to reduce soil splash; rotate crops and remove infected debris."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging; use mulch and crop rotation."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced nutrients and steady moisture; mulch soil."
+        },
+        "Red soil": {
+          "en": "Use mulch and regular root-zone irrigation; avoid drought stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Late_blight": {
+      "name": {
+        "en": "Tomato Late Blight"
+      },
+      "leaf_actions": {
+        "en": "Urgent: isolate affected plants, avoid handling wet foliage, remove infected plants safely and contact local extension services for locally appropriate control measures."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Avoid overhead irrigation and waterlogging; remove infected residues according to local guidance."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and avoid excess irrigation; get prompt local advice."
+        },
+        "Clay soil": {
+          "en": "Maintain even moisture and avoid stress; soil care does not cure late blight."
+        },
+        "Red soil": {
+          "en": "Use root-zone irrigation and mulch; avoid drought stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Leaf_Mold": {
+      "name": {
+        "en": "Tomato Leaf Mold"
+      },
+      "leaf_actions": {
+        "en": "Improve ventilation and spacing, reduce humidity and avoid wetting leaves; especially important in protected cultivation."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Avoid excessive irrigation and crowded planting."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging; water at the base."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced fertility and even moisture."
+        },
+        "Red soil": {
+          "en": "Use mulch and root-zone irrigation; avoid excessive humidity."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Septoria_leaf_spot": {
+      "name": {
+        "en": "Tomato Septoria Leaf Spot"
+      },
+      "leaf_actions": {
+        "en": "Remove lower infected leaves, avoid handling wet plants, rotate crops and remove infected debris; use locally registered treatment only as advised."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Rotate crops, remove infected debris and use mulch to reduce soil splash."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and rotate crops; control volunteer tomato plants."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced nutrients and remove infected debris."
+        },
+        "Red soil": {
+          "en": "Use mulch and root-zone irrigation; rotate crops."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Spider_mites Two-spotted_spider_mite": {
+      "name": {
+        "en": "Tomato Two-Spotted Spider Mite"
+      },
+      "leaf_actions": {
+        "en": "Check leaf undersides for mites/webbing; reduce dust, conserve beneficial predators and use locally approved controls if needed."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Use mulch to reduce dust and avoid drought stress."
+        },
+        "Black Soil": {
+          "en": "Maintain appropriate moisture without waterlogging; reduce dusty conditions."
+        },
+        "Clay soil": {
+          "en": "Maintain even moisture and mulch if suitable."
+        },
+        "Red soil": {
+          "en": "Mulch and irrigate consistently to reduce dust; avoid waterlogging."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Target_Spot": {
+      "name": {
+        "en": "Tomato Target Spot"
+      },
+      "leaf_actions": {
+        "en": "Remove affected lower leaves, improve airflow, avoid overhead watering and consult local extension staff about registered treatment."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Remove infected debris and use mulch to reduce splash."
+        },
+        "Black Soil": {
+          "en": "Improve drainage and rotate crops."
+        },
+        "Clay soil": {
+          "en": "Maintain balanced nutrition and remove infected debris."
+        },
+        "Red soil": {
+          "en": "Use mulch and root-zone irrigation; avoid drought stress."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+      "name": {
+        "en": "Tomato Yellow Leaf Curl Virus"
+      },
+      "leaf_actions": {
+        "en": "Viral disease: remove severely affected plants as locally advised, monitor whiteflies, use physical exclusion/sticky traps where suitable, and manage weeds. Insecticide advice should follow local extension guidance."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Manage weeds/volunteer hosts and rotate crops where appropriate; soil treatment does not cure virus."
+        },
+        "Black Soil": {
+          "en": "Control weeds and volunteer hosts; avoid waterlogging."
+        },
+        "Clay soil": {
+          "en": "Maintain crop hygiene and test-based nutrition; soil care does not cure virus."
+        },
+        "Red soil": {
+          "en": "Mulch and manage weeds; soil care does not cure virus."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___Tomato_mosaic_virus": {
+      "name": {
+        "en": "Tomato Mosaic Virus"
+      },
+      "leaf_actions": {
+        "en": "Viral disease: remove infected plants as advised, disinfect tools, wash hands, use clean seed and avoid tobacco contamination. Soil amendments do not cure the virus."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Remove infected debris and follow local sanitation guidance; do not assume soil treatment cures the virus."
+        },
+        "Black Soil": {
+          "en": "Maintain sanitation and remove crop debris safely; soil care does not cure the virus."
+        },
+        "Clay soil": {
+          "en": "Maintain sanitation and balanced nutrition; soil care does not cure the virus."
+        },
+        "Red soil": {
+          "en": "Use clean mulch and sanitation; soil care does not cure the virus."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    },
+    "Tomato___healthy": {
+      "name": {
+        "en": "Tomato Healthy"
+      },
+      "leaf_actions": {
+        "en": "No disease treatment is needed; stake plants, prune selectively for airflow and monitor regularly."
+      },
+      "soil_actions": {
+        "Alluvial soil": {
+          "en": "Maintain even watering, mulch and test-based nutrients."
+        },
+        "Black Soil": {
+          "en": "Avoid waterlogging and use mulch to reduce soil splash."
+        },
+        "Clay soil": {
+          "en": "Use compost if needed and maintain steady moisture."
+        },
+        "Red soil": {
+          "en": "Use mulch and regular root-zone irrigation; test soil before fertilizing."
+        }
+      },
+      "safety_note": {
+        "en": "Image classification is an estimate, not a confirmed diagnosis. Verify symptoms with a qualified local agricultural expert. Use only locally registered products and follow label directions."
+      }
+    }
+  }
+}

@@ -1,0 +1,914 @@
+{
+  "schema_version": 1,
+  "language": "en",
+  "description": "50 foundational beginner-farmer chatbot questions and answers transcribed from the user's supplied source. Answers are provided in English; add ta and te translations to each question/answer object to enable localized responses.",
+  "total_questions": 50,
+  "questions": [
+    {
+      "id": 1,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "How do I test my soil quality before planting?"
+      },
+      "keywords": [
+        "how do i test my soil quality before planting",
+        "test soil quality before",
+        "test",
+        "soil",
+        "quality",
+        "before",
+        "planting"
+      ],
+      "answer": {
+        "en": "Collect core soil samples from 6 inches deep in a zigzag pattern across your plot. Send them to a local agricultural extension lab or use a reliable home test kit to map your pH, Nitrogen (N), Phosphorus (P), and Potassium (K) baseline."
+      }
+    },
+    {
+      "id": 2,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "What is the ideal soil pH for most vegetable crops?"
+      },
+      "keywords": [
+        "what is the ideal soil ph for most vegetable crops",
+        "ideal soil vegetable crops",
+        "ideal",
+        "soil",
+        "vegetable",
+        "crops"
+      ],
+      "answer": {
+        "en": "Most vegetables thrive in slightly acidic to neutral soil, with a sweet spot between pH 6.0 and 7.0."
+      }
+    },
+    {
+      "id": 3,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "How do I fix soil that is too acidic?"
+      },
+      "keywords": [
+        "how do i fix soil that is too acidic",
+        "soil acidic",
+        "soil",
+        "acidic"
+      ],
+      "answer": {
+        "en": "Incorporate agricultural lime (calcium carbonate) into the soil. Do this several months before planting, as it takes time to raise the pH level."
+      }
+    },
+    {
+      "id": 4,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "How do I fix soil that is too alkaline or has high clay content?"
+      },
+      "keywords": [
+        "how do i fix soil that is too alkaline or has high clay content",
+        "soil alkaline high clay",
+        "soil",
+        "alkaline",
+        "high",
+        "clay",
+        "content"
+      ],
+      "answer": {
+        "en": "Mix in elemental sulfur to lower pH levels. For heavy clay, heavily incorporate organic matter like mature compost or aged leaf mold to drastically improve drainage."
+      }
+    },
+    {
+      "id": 5,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "What is the difference between tilling and no-till farming?"
+      },
+      "keywords": [
+        "what is the difference between tilling and no-till farming",
+        "difference between tilling no-till",
+        "difference",
+        "between",
+        "tilling",
+        "no-till",
+        "farming"
+      ],
+      "answer": {
+        "en": "Tilling physically turns the soil to clear weeds but can disrupt soil microbes. No-till farming leaves the soil intact, planting directly into cover crop residues to preserve moisture and stop erosion."
+      }
+    },
+    {
+      "id": 6,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "How can I tell if my soil drains properly?"
+      },
+      "keywords": [
+        "how can i tell if my soil drains properly",
+        "tell soil drains properly",
+        "tell",
+        "soil",
+        "drains",
+        "properly"
+      ],
+      "answer": {
+        "en": "Dig a 12-inch deep hole, fill it with water, and let it drain. Fill it again and track the drop hourly; 1 to 2 inches of drainage per hour is perfect. Less than 1 inch signals poor drainage."
+      }
+    },
+    {
+      "id": 7,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "What is compost and how do I start a pile?"
+      },
+      "keywords": [
+        "what is compost and how do i start a pile",
+        "compost start pile",
+        "compost",
+        "start",
+        "pile"
+      ],
+      "answer": {
+        "en": "Compost is decayed organic fertilizer. Build a pile layering \"greens\" (nitrogen-rich kitchen scraps, green cuts) and \"browns\" (carbon-rich dry leaves, straw) with water, turning it weekly."
+      }
+    },
+    {
+      "id": 8,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "Can I apply fresh animal manure directly onto my crops?"
+      },
+      "keywords": [
+        "can i apply fresh animal manure directly onto my crops",
+        "apply fresh animal manure",
+        "apply",
+        "fresh",
+        "animal",
+        "manure",
+        "directly",
+        "onto"
+      ],
+      "answer": {
+        "en": "No. Fresh manure has excessive ammonia that burns roots and can harbor harmful pathogens like E. coli. Always compost or age manure for 3 to 6 months first."
+      }
+    },
+    {
+      "id": 9,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "What do the N-P-K numbers on fertilizer labels mean?"
+      },
+      "keywords": [
+        "what do the n-p-k numbers on fertilizer labels mean",
+        "n-p-k numbers fertilizer labels",
+        "n-p-k",
+        "numbers",
+        "fertilizer",
+        "labels",
+        "mean"
+      ],
+      "answer": {
+        "en": "They show percentages of Nitrogen (N) for leaf growth, Phosphorus (P) for root/flower health, and Potassium (K) for overall structural disease resistance."
+      }
+    },
+    {
+      "id": 10,
+      "category": "soil_health_land_preparation",
+      "question": {
+        "en": "What is the first step to clear a brand new plot of land?"
+      },
+      "keywords": [
+        "what is the first step to clear a brand new plot of land",
+        "step clear brand plot",
+        "step",
+        "clear",
+        "brand",
+        "plot",
+        "land"
+      ],
+      "answer": {
+        "en": "Strip out surface rocks, invasive weeds, and heavy brush. Complete a soil test, mix in initial compost, and form raised rows or beds to handle water management before seed delivery.\n\n🌾 Category 2: Seeds, Planting, & Crop Care"
+      }
+    },
+    {
+      "id": 11,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "What is the difference between heirloom, hybrid, and GMO seeds?"
+      },
+      "keywords": [
+        "what is the difference between heirloom hybrid and gmo seeds",
+        "difference between heirloom hybrid",
+        "difference",
+        "between",
+        "heirloom",
+        "hybrid",
+        "seeds"
+      ],
+      "answer": {
+        "en": "Heirlooms are open-pollinated varieties true to their parent plant. Hybrids are bred conventionally from two parent varieties for specific traits. GMOs are engineered in highly controlled labs and are generally restricted."
+      }
+    },
+    {
+      "id": 12,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "How deep should I sow my seeds?"
+      },
+      "keywords": [
+        "how deep should i sow my seeds",
+        "deep seeds",
+        "deep",
+        "seeds"
+      ],
+      "answer": {
+        "en": "Plant seeds roughly two to three times as deep as the seed is wide. Fine seeds need a shallow dust layer; large seeds like beans go much deeper."
+      }
+    },
+    {
+      "id": 13,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "What is crop rotation and why is it mandatory?"
+      },
+      "keywords": [
+        "what is crop rotation and why is it mandatory",
+        "crop rotation mandatory",
+        "crop",
+        "rotation",
+        "mandatory"
+      ],
+      "answer": {
+        "en": "It means changing the crop family grown in a specific bed each season. It breaks regional pest and plant disease life cycles and stops specific soil nutrient depletion."
+      }
+    },
+    {
+      "id": 14,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "What are companion plants?"
+      },
+      "keywords": [
+        "what are companion plants",
+        "companion plants",
+        "companion",
+        "plants"
+      ],
+      "answer": {
+        "en": "Growing different species close together for mutual benefits. For example, marigolds (https://www.google.com/search?kgmid=%2Fm%2F01y03f&q=marigolds) act as a natural pest repellent against harmful soil nematodes, while basil enhances tomato vitality."
+      }
+    },
+    {
+      "id": 15,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "Should I choose direct seeding or transplanting?"
+      },
+      "keywords": [
+        "should i choose direct seeding or transplanting",
+        "choose direct seeding transplanting",
+        "choose",
+        "direct",
+        "seeding",
+        "transplanting"
+      ],
+      "answer": {
+        "en": "Direct seed sturdy, fast root crops (carrots, corn, beans) right into fields. Transplant long-season, delicate crops (tomatoes, peppers) by starting them in a protected nursery first."
+      }
+    },
+    {
+      "id": 16,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "How do I verify if my field crops need water?"
+      },
+      "keywords": [
+        "how do i verify if my field crops need water",
+        "verify field crops need",
+        "verify",
+        "field",
+        "crops",
+        "need",
+        "water"
+      ],
+      "answer": {
+        "en": "Push your finger 2 inches deep into the soil. If it feels completely dry at that depth, it is time to irrigate. Early morning wilting is another critical indicator."
+      }
+    },
+    {
+      "id": 17,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "What is crop thinning and why is it necessary?"
+      },
+      "keywords": [
+        "what is crop thinning and why is it necessary",
+        "crop thinning necessary",
+        "crop",
+        "thinning",
+        "necessary"
+      ],
+      "answer": {
+        "en": "Thinning is removing excess seedlings clustered together. It eliminates resource competition, ensuring surviving plants get ample sunlight and soil space."
+      }
+    },
+    {
+      "id": 18,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "What is mulching and what are its primary benefits?"
+      },
+      "keywords": [
+        "what is mulching and what are its primary benefits",
+        "mulching primary benefits",
+        "mulching",
+        "primary",
+        "benefits"
+      ],
+      "answer": {
+        "en": "Laying down straw, wood chips, or leaves over soil rows. It locks in ground moisture, cuts out weed germination, and buffers root temperature."
+      }
+    },
+    {
+      "id": 19,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "What are nitrogen-fixing crops?"
+      },
+      "keywords": [
+        "what are nitrogen-fixing crops",
+        "nitrogen-fixing crops",
+        "nitrogen-fixing",
+        "crops"
+      ],
+      "answer": {
+        "en": "Legumes like beans, peas, and clover absorb nitrogen from the air and store it in root nodules, naturally fertilizing the soil for subsequent crops."
+      }
+    },
+    {
+      "id": 20,
+      "category": "seeds_planting_crop_care",
+      "question": {
+        "en": "How do I know when vegetables are genuinely ready for harvest?"
+      },
+      "keywords": [
+        "how do i know when vegetables are genuinely ready for harvest",
+        "know vegetables ready harvest",
+        "know",
+        "vegetables",
+        "ready",
+        "harvest"
+      ],
+      "answer": {
+        "en": "Tomatoes should separate easily from the stem and be fully colored; corn silks should turn brown and crisp; root crops like carrots should show their target shoulder size at the surface.\n\n💧 Category 3: Irrigation & Water Management"
+      }
+    },
+    {
+      "id": 21,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "What is drip irrigation and why should I choose it?"
+      },
+      "keywords": [
+        "what is drip irrigation and why should i choose it",
+        "drip irrigation choose",
+        "drip",
+        "irrigation",
+        "choose"
+      ],
+      "answer": {
+        "en": "A system that trickles water directly to plant root bases via tubing. It slashes water loss by 50%, stops evaporation, and leaves crop foliage dry to prevent fungus."
+      }
+    },
+    {
+      "id": 22,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "What is the optimal time of day to water my fields?"
+      },
+      "keywords": [
+        "what is the optimal time of day to water my fields",
+        "optimal time water fields",
+        "optimal",
+        "time",
+        "water",
+        "fields"
+      ],
+      "answer": {
+        "en": "Early morning. This allows water to soak deep before sun-driven evaporation peaks and lets leaf spray dry off rapidly, preventing damp mold issues."
+      }
+    },
+    {
+      "id": 23,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "What happens if I overwater my crops?"
+      },
+      "keywords": [
+        "what happens if i overwater my crops",
+        "happens overwater crops",
+        "happens",
+        "overwater",
+        "crops"
+      ],
+      "answer": {
+        "en": "Overwatering displaces oxygen in the soil pores, effectively drowning the root system. This causes root rot, leaf yellowing, and eventual plant death."
+      }
+    },
+    {
+      "id": 24,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "How do I keep my fields from waterlogging during heavy monsoon rains?"
+      },
+      "keywords": [
+        "how do i keep my fields from waterlogging during heavy monsoon rains",
+        "keep fields waterlogging during",
+        "keep",
+        "fields",
+        "waterlogging",
+        "during",
+        "heavy",
+        "monsoon"
+      ],
+      "answer": {
+        "en": "Grade your field layout to allow natural drainage, build active discharge furrows between crop rows, and prioritize planting on elevated raised beds."
+      }
+    },
+    {
+      "id": 25,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "How can I build a basic rainwater harvesting system on my farm?"
+      },
+      "keywords": [
+        "how can i build a basic rainwater harvesting system on my farm",
+        "build rainwater harvesting system",
+        "build",
+        "rainwater",
+        "harvesting",
+        "system",
+        "farm"
+      ],
+      "answer": {
+        "en": "Set up structural roof gutters on barns or tool sheds directed into food-grade storage drums. Make sure to screen openings to stop mosquito cycles."
+      }
+    },
+    {
+      "id": 26,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "How should I adjust watering strategies during a drought?"
+      },
+      "keywords": [
+        "how should i adjust watering strategies during a drought",
+        "adjust watering strategies during",
+        "adjust",
+        "watering",
+        "strategies",
+        "during",
+        "drought"
+      ],
+      "answer": {
+        "en": "Water less frequently but much deeper. Shallow watering creates weak, surface-bound roots, whereas deep watering trains roots down to resilient subsoil water zones."
+      }
+    },
+    {
+      "id": 27,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "What is furrow irrigation?"
+      },
+      "keywords": [
+        "what is furrow irrigation",
+        "furrow irrigation",
+        "furrow",
+        "irrigation"
+      ],
+      "answer": {
+        "en": "A traditional method where parallel channels are dug between crop rows. Water is introduced at the high end and flows down, soaking sideways into the crop rows."
+      }
+    },
+    {
+      "id": 28,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "What is aquifer/groundwater recharge?"
+      },
+      "keywords": [
+        "what is aquifergroundwater recharge",
+        "aquifergroundwater recharge",
+        "aquifergroundwater",
+        "recharge"
+      ],
+      "answer": {
+        "en": "Directing runoff water into specialized pits or collection ponds to filter back down into the underground water table instead of letting it wash out."
+      }
+    },
+    {
+      "id": 29,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "Can household greywater be reused safely on crops?"
+      },
+      "keywords": [
+        "can household greywater be reused safely on crops",
+        "household greywater reused safely",
+        "household",
+        "greywater",
+        "reused",
+        "safely",
+        "crops"
+      ],
+      "answer": {
+        "en": "Water from washing machines or sinks can be used for fruit trees or ornamentals if eco-friendly, bio-soaps are used. Never apply blackwater (toilet waste) to food crops."
+      }
+    },
+    {
+      "id": 30,
+      "category": "irrigation_water_management",
+      "question": {
+        "en": "How do I verify if my local well water is safe for crops?"
+      },
+      "keywords": [
+        "how do i verify if my local well water is safe for crops",
+        "verify local well water",
+        "verify",
+        "local",
+        "well",
+        "water",
+        "safe",
+        "crops"
+      ],
+      "answer": {
+        "en": "Take a sample to a lab to test its electrical conductivity (salinity levels) and pH. Excessive salt levels build up in soil, causing crop stunting.\n\n🪲 Category 4: Pest, Weed, & Disease Management"
+      }
+    },
+    {
+      "id": 31,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "What is Integrated Pest Management (IPM)?"
+      },
+      "keywords": [
+        "what is integrated pest management ipm",
+        "integrated pest management",
+        "integrated",
+        "pest",
+        "management"
+      ],
+      "answer": {
+        "en": "An eco-balanced framework combining beneficial predator insects, row barriers, and crop rotation to control pests, relying on synthetic chemicals only as a absolute fallback."
+      }
+    },
+    {
+      "id": 32,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "How do I manage heavy weeds without purchasing chemical herbicides?"
+      },
+      "keywords": [
+        "how do i manage heavy weeds without purchasing chemical herbicides",
+        "manage heavy weeds without",
+        "manage",
+        "heavy",
+        "weeds",
+        "without",
+        "purchasing",
+        "chemical"
+      ],
+      "answer": {
+        "en": "Apply thick organic mulch blankets to choke out light, perform routine shallow hoeing when weeds are tiny seedlings, and plant fast cover crops to crowd them out."
+      }
+    },
+    {
+      "id": 33,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "What are the visible signs of a crop fungal infection?"
+      },
+      "keywords": [
+        "what are the visible signs of a crop fungal infection",
+        "visible signs crop fungal",
+        "visible",
+        "signs",
+        "crop",
+        "fungal",
+        "infection"
+      ],
+      "answer": {
+        "en": "Look for powdery white sheets on leaves, circular target-shaped brown patches with yellow rims, or dark, slimy lesions across lower crop stems."
+      }
+    },
+    {
+      "id": 34,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "How can I actively prevent fungal outbreaks on my farm?"
+      },
+      "keywords": [
+        "how can i actively prevent fungal outbreaks on my farm",
+        "prevent fungal outbreaks farm",
+        "prevent",
+        "fungal",
+        "outbreaks",
+        "farm"
+      ],
+      "answer": {
+        "en": "Enforce wide crop spacing to facilitate air circulation, always irrigate soil directly instead of overhead wetting, and destroy infected plants completely (never compost diseased foliage)."
+      }
+    },
+    {
+      "id": 35,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "How can I mix a safe, quick organic pesticide at home?"
+      },
+      "keywords": [
+        "how can i mix a safe quick organic pesticide at home",
+        "safe quick organic pesticide",
+        "safe",
+        "quick",
+        "organic",
+        "pesticide",
+        "home"
+      ],
+      "answer": {
+        "en": "Blend 1 tablespoon of mild liquid dish soap and 1 tablespoon of vegetable oil into 1 gallon of clean water. Mist onto leaves to treat soft insects like aphids."
+      }
+    },
+    {
+      "id": 36,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "How do I tell a beneficial insect from a destructive farm pest?"
+      },
+      "keywords": [
+        "how do i tell a beneficial insect from a destructive farm pest",
+        "tell beneficial insect destructive",
+        "tell",
+        "beneficial",
+        "insect",
+        "destructive",
+        "farm",
+        "pest"
+      ],
+      "answer": {
+        "en": "Pests chew leaves, tunnel into fruit, or sap stems (caterpillars, thrips). Beneficials consume pests or handle pollination (ladybugs, lacewings, honeybees)."
+      }
+    },
+    {
+      "id": 37,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "Why are my crop leaves turning yellow?"
+      },
+      "keywords": [
+        "why are my crop leaves turning yellow",
+        "crop leaves turning yellow",
+        "crop",
+        "leaves",
+        "turning",
+        "yellow"
+      ],
+      "answer": {
+        "en": "Yellow leaves (chlorosis) usually signal iron/nitrogen nutrient shortages, chronic overwatering drowning roots, or an active root pest issue. Check soil wetness first."
+      }
+    },
+    {
+      "id": 38,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "What causes blossom end rot on tomatoes and how is it fixed?"
+      },
+      "keywords": [
+        "what causes blossom end rot on tomatoes and how is it fixed",
+        "causes blossom tomatoes fixed",
+        "causes",
+        "blossom",
+        "tomatoes",
+        "fixed"
+      ],
+      "answer": {
+        "en": "A distinct black, leathery patch on the fruit bottom caused by lack of calcium. It is often triggered by irregular, erratic watering cycles that stop calcium uptake. Keep watering uniform."
+      }
+    },
+    {
+      "id": 39,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "How do I keep wild animals like deer or rabbits out of fields?"
+      },
+      "keywords": [
+        "how do i keep wild animals like deer or rabbits out of fields",
+        "keep wild animals like",
+        "keep",
+        "wild",
+        "animals",
+        "like",
+        "deer",
+        "rabbits"
+      ],
+      "answer": {
+        "en": "Set up physical perimeter fencing (a minimum of 2–3 feet deep/high for burrowers, 8 feet tall for deer) or utilize scent-based repellents."
+      }
+    },
+    {
+      "id": 40,
+      "category": "pest_weed_disease_management",
+      "question": {
+        "en": "What is the difference between contact and systemic pesticides?"
+      },
+      "keywords": [
+        "what is the difference between contact and systemic pesticides",
+        "difference between contact systemic",
+        "difference",
+        "between",
+        "contact",
+        "systemic",
+        "pesticides"
+      ],
+      "answer": {
+        "en": "Contact sprays kill insects purely by physically touching their bodies. Systemic inputs are absorbed right into the plant's vascular network, making the plant tissue toxic to insects that chew it.\n\n🚜 Category 5: Farm Tools & Operations"
+      }
+    },
+    {
+      "id": 41,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "What basic hand tools should a beginner farmer buy first?"
+      },
+      "keywords": [
+        "what basic hand tools should a beginner farmer buy first",
+        "hand tools beginner farmer",
+        "hand",
+        "tools",
+        "beginner",
+        "farmer"
+      ],
+      "answer": {
+        "en": "Invest in a forged spade shovel, a hand trowel, a sharp stirrup hoe for weeding, bypass hand pruners, and a heavy-duty garden hose."
+      }
+    },
+    {
+      "id": 42,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "What is a cover crop and when do I plant it?"
+      },
+      "keywords": [
+        "what is a cover crop and when do i plant it",
+        "cover crop plant",
+        "cover",
+        "crop",
+        "plant"
+      ],
+      "answer": {
+        "en": "Crops like clover or winter rye planted during the off-season. They hold soil intact against erosion, punch roots down to loosen hard dirt, and add nitrogen when disked back in."
+      }
+    },
+    {
+      "id": 43,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "How do I clean and maintain my farm hand tools?"
+      },
+      "keywords": [
+        "how do i clean and maintain my farm hand tools",
+        "clean maintain farm hand",
+        "clean",
+        "maintain",
+        "farm",
+        "hand",
+        "tools"
+      ],
+      "answer": {
+        "en": "Wash off caked mud, scrub away rust patches with steel wool, and dry tools completely. Rub down the metal parts with mineral oil before storing in a dry tool shed."
+      }
+    },
+    {
+      "id": 44,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "What is a Farmer Producer Organization (FPO)?"
+      },
+      "keywords": [
+        "what is a farmer producer organization fpo",
+        "farmer producer organization",
+        "farmer",
+        "producer",
+        "organization"
+      ],
+      "answer": {
+        "en": "A collective group where farmers bundle resources. By acting together, small farms buy inputs at bulk rates and sell yields directly to larger buyers at premium margins."
+      }
+    },
+    {
+      "id": 45,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "What is the best way to track expenses and yields for profitability?"
+      },
+      "keywords": [
+        "what is the best way to track expenses and yields for profitability",
+        "track expenses yields profitability",
+        "track",
+        "expenses",
+        "yields",
+        "profitability"
+      ],
+      "answer": {
+        "en": "Use a basic spreadsheet or ledger book. Track every cost (seeds, amendments, water, fuel) versus crop yields and sales values to see which crop pays off best."
+      }
+    },
+    {
+      "id": 46,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "What are the main advantages of greenhouse farming?"
+      },
+      "keywords": [
+        "what are the main advantages of greenhouse farming",
+        "main advantages greenhouse farming",
+        "main",
+        "advantages",
+        "greenhouse",
+        "farming"
+      ],
+      "answer": {
+        "en": "It creates an enclosed microclimate that lets you control temperature and humidity, shielding valuable crops from weather extremes and intense insect pressure."
+      }
+    },
+    {
+      "id": 47,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "What does sustainable agriculture mean in simple terms?"
+      },
+      "keywords": [
+        "what does sustainable agriculture mean in simple terms",
+        "sustainable agriculture mean simple",
+        "sustainable",
+        "agriculture",
+        "mean",
+        "simple",
+        "terms"
+      ],
+      "answer": {
+        "en": "Farming methods that protect soil vitality and natural ecosystems so the land remains highly fertile and economically viable for generations to come."
+      }
+    },
+    {
+      "id": 48,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "What protective gear should I wear when applying treatments?"
+      },
+      "keywords": [
+        "what protective gear should i wear when applying treatments",
+        "protective gear wear applying",
+        "protective",
+        "gear",
+        "wear",
+        "applying",
+        "treatments"
+      ],
+      "answer": {
+        "en": "Always wear full Personal Protective Equipment (PPE): a particle mask or chemical respirator, safety goggles, heavy rubber gloves, long sleeves, and closed boots. Never spray on windy days."
+      }
+    },
+    {
+      "id": 49,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "What is monoculture and why is it dangerous?"
+      },
+      "keywords": [
+        "what is monoculture and why is it dangerous",
+        "monoculture dangerous",
+        "monoculture",
+        "dangerous"
+      ],
+      "answer": {
+        "en": "Planting one single crop variety across an entire field area year after year. If a specialized disease or pest strikes, it can wipe out your entire season's source of revenue."
+      }
+    },
+    {
+      "id": 50,
+      "category": "farm_tools_operations",
+      "question": {
+        "en": "Where can a beginner farmer go for trusted, local advice?"
+      },
+      "keywords": [
+        "where can a beginner farmer go for trusted local advice",
+        "beginner farmer trusted local",
+        "beginner",
+        "farmer",
+        "trusted",
+        "local",
+        "advice"
+      ],
+      "answer": {
+        "en": "Visit your local government agricultural extension center, check regional farming cooperative groups online, or talk directly with experienced growers at regional farmers' markets."
+      }
+    }
+  ]
+}

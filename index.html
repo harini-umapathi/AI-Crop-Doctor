@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="app_title">AI Crop Doctor — Smart Crop & Soil Intelligence</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body class="light-theme">
+
+    <!-- SPLASH SCREEN (3 Seconds) -->
+    <div id="splash-screen" class="splash-wrapper">
+        <div class="splash-content">
+            <img src="logo.png" alt="AI Crop Doctor Logo" class="splash-logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/628/628283.png'">
+            <h1 data-i18n="app_title">AI Crop Doctor</h1>
+            <p data-i18n="splash_tagline">Smart Crop Disease Detection & Soil Intelligence</p>
+            <div class="spinner mt-3"></div>
+        </div>
+    </div>
+
+    <!-- AUTHENTICATION SCREEN -->
+    <div id="auth-container" class="auth-wrapper hidden">
+        <div class="auth-card">
+            <div class="brand-header">
+                <div class="logo-circle"><img src="logo.png" alt="Logo" onerror="this.src='https://cdn-icons-png.flaticon.com/512/628/628283.png'"></div>
+                <h1 data-i18n="app_title">AI Crop Doctor</h1>
+                <p data-i18n="auth_subtitle">Smart Crop Disease Detection & Soil Intelligence</p>
+            </div>
+
+            <div class="auth-lang-bar mb-3">
+                <select id="auth-lang-select" class="form-control" onchange="changeLanguage(this.value)">
+                    <option value="en">English</option>
+                    <option value="ta">தமிழ் (Tamil)</option>
+                    <option value="te">తెలుగు (Telugu)</option>
+                </select>
+            </div>
+
+            <div class="auth-tabs">
+                <button class="tab-btn active" onclick="switchAuthTab('login')" data-i18n="tab_login">Login</button>
+                <button class="tab-btn" onclick="switchAuthTab('register')" data-i18n="tab_register">Register</button>
+            </div>
+
+            <!-- LOGIN FORM -->
+            <form id="login-form" class="auth-form" onsubmit="handleLogin(event)">
+                <div class="form-group">
+                    <label data-i18n="lbl_username">Username (Format: ABCDE123)</label>
+                    <input type="text" id="login-user" placeholder="e.g. KUMAR101" required pattern="[A-Z]{5}\d{3}" title="5 uppercase letters and 3 digits">
+                    <small class="error-hint" data-i18n="hint_user">Format: 5 Uppercase letters + 3 digits</small>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="lbl_password">Password (4 Digits)</label>
+                    <input type="password" id="login-pass" placeholder="••••" required pattern="\d{4}" maxlength="4" title="4 numeric digits">
+                    <small class="error-hint" data-i18n="hint_pass">Format: Exactly 4 digits</small>
+                </div>
+                <button type="submit" class="btn-primary full-width" data-i18n="btn_login">Login to Dashboard</button>
+                <button type="button" class="btn-secondary full-width mt-2" onclick="fillDemoLogin()" data-i18n="btn_demo">Quick Demo Login</button>
+            </form>
+
+            <!-- REGISTER FORM -->
+            <form id="register-form" class="auth-form hidden" onsubmit="handleRegister(event)">
+                <div class="form-group">
+                    <label data-i18n="lbl_farmer_name">Farmer Full Name</label>
+                    <input type="text" id="reg-name" placeholder="e.g. Murugan Velu" required>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="lbl_username">Username (Format: ABCDE123)</label>
+                    <input type="text" id="reg-user" placeholder="e.g. MURUG202" required pattern="[A-Z]{5}\d{3}">
+                </div>
+                <div class="form-row">
+                    <div class="form-group">
+                        <label data-i18n="lbl_acres">Field Size (Acres)</label>
+                        <input type="number" id="reg-acres" placeholder="e.g. 5.5" step="0.1" required>
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="lbl_region">Region / District</label>
+                        <input type="text" id="reg-region" placeholder="e.g. Thanjavur" required>
+                    </div>
+                </div>
+                <div class="form-group">
+                    <label data-i18n="lbl_create_pass">Create 4-Digit Password</label>
+                    <input type="password" id="reg-pass" placeholder="••••" required pattern="\d{4}" maxlength="4">
+                </div>
+                <button type="submit" class="btn-primary full-width" data-i18n="btn_register">Complete Registration</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- MAIN APP CONTAINER -->
+    <div id="app-container" class="app-layout hidden">
+        
+        <!-- SIDEBAR NAVIGATION -->
+        <aside class="sidebar">
+            <div class="sidebar-brand">
+                <img src="logo.png" alt="Logo" class="sidebar-logo" onerror="this.style.display='none'">
+                <span data-i18n="app_title">AI Crop Doctor</span>
+            </div>
+            <nav class="sidebar-nav">
+                <a href="#dashboard" class="nav-item active" onclick="switchNav('dashboard')"><i class="fas fa-home"></i> <span data-i18n="nav_home">Dashboard</span></a>
+                <a href="#leaf-scan" class="nav-item" onclick="switchNav('leaf-scan')"><i class="fas fa-leaf"></i> <span data-i18n="nav_leaf">Leaf Scan</span></a>
+                <a href="#soil-analysis" class="nav-item" onclick="switchNav('soil-analysis')"><i class="fas fa-layer-group"></i> <span data-i18n="nav_soil">Soil Analysis</span></a>
+                <a href="#combined-analysis" class="nav-item" onclick="switchNav('combined-analysis')"><i class="fas fa-stethoscope"></i> <span data-i18n="nav_combined">Combined Health</span></a>
+                <a href="#farmer-chatbot" class="nav-item" onclick="switchNav('farmer-chatbot')"><i class="fas fa-comments"></i> <span data-i18n="nav_chatbot">Farmer AI Chat</span></a>
+                <a href="#expert-consult" class="nav-item" onclick="switchNav('expert-consult')"><i class="fas fa-user-tie"></i> <span data-i18n="nav_expert">Expert Consultation</span></a>
+                <a href="#history" class="nav-item" onclick="switchNav('history')"><i class="fas fa-history"></i> <span data-i18n="nav_history">Scan History</span></a>
+                <a href="#settings" class="nav-item" onclick="switchNav('settings')"><i class="fas fa-gear"></i> <span data-i18n="nav_settings">Settings</span></a>
+            </nav>
+            <div class="sidebar-footer">
+                <div class="user-pill">
+                    <i class="fas fa-user-circle"></i>
+                    <div class="user-meta">
+                        <span id="display-farmer-name">Farmer</span>
+                        <small id="display-username">FARM123</small>
+                    </div>
+                </div>
+                <button class="btn-logout" onclick="handleLogout()" title="Logout"><i class="fas fa-sign-out-alt"></i></button>
+            </div>
+        </aside>
+
+        <!-- MAIN CONTENT AREA -->
+        <main class="main-content">
+            <header class="topbar">
+                <div class="topbar-left">
+                    <h2 id="page-title" data-i18n="nav_home">Dashboard</h2>
+                </div>
+                <div class="topbar-right">
+                    <div class="language-selector">
+                        <select id="lang-select" class="form-control" onchange="changeLanguage(this.value)">
+                            <option value="en">English</option>
+                            <option value="ta">தமிழ் (Tamil)</option>
+                            <option value="te">తెలుగు (Telugu)</option>
+                        </select>
+                    </div>
+                    <button class="icon-btn" onclick="toggleDarkMode()" title="Toggle Theme"><i class="fas fa-moon" id="theme-icon"></i></button>
+                </div>
+            </header>
+
+            <!-- VIEW 1: DASHBOARD -->
+            <section id="view-dashboard" class="view-section active">
+                <div class="welcome-banner">
+                    <div class="banner-text">
+                        <h3 id="dash-welcome-text">Welcome back, Farmer! 🌱</h3>
+                        <p data-i18n="dash_desc">Your AI crop intelligence assistant is ready. Monitor leaf health and soil nutrition to maximize yield.</p>
+                    </div>
+                </div>
+
+                <div class="dashboard-stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-icon green"><i class="fas fa-seedling"></i></div>
+                        <div class="stat-info">
+                            <h4 id="stat-scans">0</h4>
+                            <p data-i18n="stat_total_scans">Total Scans</p>
+                        </div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-icon gold"><i class="fas fa-shield-alt"></i></div>
+                        <div class="stat-info">
+                            <h4 id="stat-healthy">100%</h4>
+                            <p data-i18n="stat_health_index">Health Index</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card mt-4">
+                    <h4><i class="fas fa-lightbulb text-gold"></i> <span data-i18n="dash_farming_tip">Today's Farming Tip</span></h4>
+                    <div class="tip-box">
+                        <i class="fas fa-info-circle"></i>
+                        <div>
+                            <h5 data-i18n="tip_title">Early Morning Irrigation</h5>
+                            <p data-i18n="tip_desc">Irrigate crops during early morning hours to minimize fungal spore activation and reduce water evaporation loss.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 2: LEAF SCAN MODULE -->
+            <section id="view-leaf-scan" class="view-section">
+                <div class="card">
+                    <h3 data-i18n="leaf_title"><i class="fas fa-leaf text-green"></i> AI Leaf Disease Detection</h3>
+                    <p class="text-muted" data-i18n="leaf_desc">Upload a leaf photograph from any of our 38 supported crop categories.</p>
+
+                    <div class="upload-container" onclick="document.getElementById('leaf-file-input').click()">
+                        <input type="file" id="leaf-file-input" accept="image/*" class="hidden" onchange="handleLeafFileSelect(event)">
+                        <div id="upload-placeholder">
+                            <i class="fas fa-cloud-upload-alt fa-3x text-green"></i>
+                            <p data-i18n="upload_prompt">Click to upload leaf image or drag & drop</p>
+                        </div>
+                        <div id="upload-preview-container" class="hidden">
+                            <img id="leaf-preview-img" src="" alt="Leaf Preview">
+                            <button class="btn-sm btn-danger mt-2" onclick="event.stopPropagation(); resetLeafUpload()" data-i18n="btn_remove">Remove</button>
+                        </div>
+                    </div>
+                    <button class="btn-primary full-width mt-4" onclick="runLeafAnalysis()"><i class="fas fa-microscope"></i> <span data-i18n="btn_run_leaf">Run AI Leaf Analysis</span></button>
+                </div>
+
+                
+<div id="leaf-result-card" class="card hidden mt-4">
+    <h3 id="leaf-disease-name" class="text-green">
+        Prediction Result
+    </h3>
+
+    <p id="leaf-symptoms-text" class="mt-2"></p>
+
+    <div id="leaf-confidence-container" class="mt-3">
+        <label for="leaf-confidence-bar">Model confidence</label>
+        <progress id="leaf-confidence-bar"
+                  max="100" value="0"
+                  style="width:100%;height:18px;"></progress>
+        <p id="leaf-confidence-text"></p>
+    </div>
+
+    <div id="leaf-top-predictions" class="mt-3"></div>
+
+    <p id="leaf-prediction-warning"
+       class="mt-3 hidden"
+       role="status"></p>
+
+    <p class="text-muted mt-3">
+        AI predictions are estimates. Confirm the diagnosis using
+        visible symptoms or a qualified agricultural expert.
+    </p>
+</div>
+<p id="leaf-status" class="mt-3" role="status" aria-live="polite"></p>
+
+            </section>
+
+            <!-- VIEW 3: SOIL ANALYSIS MODULE -->
+            <section id="view-soil-analysis" class="view-section">
+                <div class="card">
+                    <h3 data-i18n="soil_title"><i class="fas fa-layer-group text-gold"></i> Soil Intelligence & Analysis</h3>
+                    <div class="soil-tabs">
+                        <button class="soil-tab-btn active" onclick="switchSoilTab('photo')"><i class="fas fa-camera"></i> <span data-i18n="soil_tab_photo">Soil Photo</span></button>
+                        <button class="soil-tab-btn" onclick="switchSoilTab('manual')"><i class="fas fa-keyboard"></i> <span data-i18n="soil_tab_manual">Manual NPK / pH</span></button>
+                    </div>
+
+                    <div id="soil-tab-photo" class="soil-pane">
+                        <div class="upload-container mt-3" onclick="document.getElementById('soil-file-input').click()">
+                            <input type="file" id="soil-file-input" accept="image/*" class="hidden" onchange="handleSoilFileSelect(event)">
+                            <div id="soil-upload-placeholder">
+                                <i class="fas fa-mountain fa-3x text-gold"></i>
+                                <p data-i18n="soil_photo_prompt">Upload soil photograph (Alluvial, Black, Red, Clay, Laterite, Sandy)</p>
+                            </div>
+                            <div id="soil-upload-preview" class="hidden">
+                                <img id="soil-preview-img" src="" alt="Soil Preview">
+                                <button class="btn-sm btn-danger mt-2" onclick="event.stopPropagation(); resetSoilUpload()" data-i18n="btn_remove">Remove</button>
+                            </div>
+                        </div>
+                        <button class="btn-primary full-width mt-3" onclick="runSoilPhotoAnalysis()" data-i18n="btn_analyze_soil_photo">Analyze Soil Photo</button>
+                    </div>
+
+                    <div id="soil-tab-manual" class="soil-pane hidden">
+                        <div class="form-grid-3 mt-3">
+                            <div class="form-group"><label data-i18n="soil_ph">Soil pH (0-14)</label><input type="number" id="soil-ph" value="6.5" step="0.1"></div>
+                            <div class="form-group"><label data-i18n="soil_n">Nitrogen (N) kg/ha</label><input type="number" id="soil-n" value="140"></div>
+                            <div class="form-group"><label data-i18n="soil_p">Phosphorus (P) kg/ha</label><input type="number" id="soil-p" value="45"></div>
+                            <div class="form-group"><label data-i18n="soil_k">Potassium (K) kg/ha</label><input type="number" id="soil-k" value="200"></div>
+                            <div class="form-group"><label data-i18n="soil_moisture">Moisture %</label><input type="number" id="soil-moisture" value="35"></div>
+                            <div class="form-group"><label data-i18n="soil_temp">Temperature (°C)</label><input type="number" id="soil-temp" value="28"></div>
+                        </div>
+                        <button class="btn-primary full-width mt-3" onclick="runManualSoilAnalysis()" data-i18n="btn_analyze_manual">Analyze Parameters</button>
+                    </div>
+                </div>
+
+                <div id="soil-result-card" class="card hidden mt-4">
+                    <h3 data-i18n="soil_report_title" class="text-gold">Soil Intelligence Report</h3>
+                    <div id="soil-result-content" class="mt-3"></div>
+                </div>
+            </section>
+
+            <!-- VIEW 4: COMBINED HEALTH (SIDE-BY-SIDE UPLOAD) -->
+            <section id="view-combined-analysis" class="view-section">
+                <div class="card">
+                    <h3 class="text-green"><i class="fas fa-stethoscope"></i> <span data-i18n="combined_title">Side-by-Side Combined Health Analysis</span></h3>
+                    <p class="text-muted" data-i18n="combined_sub">Upload both your crop leaf image and soil sample image side-by-side. Our AI model will predict the disease and correlate with soil properties simultaneously.</p>
+
+                    <!-- Side-by-Side Upload Container -->
+                    <div class="combined-upload-grid mt-4">
+                        <!-- Left Box: Leaf Image -->
+                        <div class="upload-box-side" onclick="document.getElementById('comb-leaf-input').click()">
+                            <input type="file" id="comb-leaf-input" accept="image/*" class="hidden" onchange="handleCombLeafSelect(event)">
+                            <div id="comb-leaf-placeholder">
+                                <i class="fas fa-leaf fa-2x text-green mb-2"></i>
+                                <h5 data-i18n="comb_leaf_title">Upload Leaf Image</h5>
+                                <small class="text-muted">Click or drag image here</small>
+                            </div>
+                            <div id="comb-leaf-preview-box" class="hidden">
+                                <img id="comb-leaf-img" src="" alt="Leaf Preview">
+                                <button class="btn-sm btn-danger mt-2" onclick="event.stopPropagation(); resetCombLeaf()">Change</button>
+                            </div>
+                        </div>
+
+                        <!-- Right Box: Soil Image -->
+                        <div class="upload-box-side" onclick="document.getElementById('comb-soil-input').click()">
+                            <input type="file" id="comb-soil-input" accept="image/*" class="hidden" onchange="handleCombSoilSelect(event)">
+                            <div id="comb-soil-placeholder">
+                                <i class="fas fa-mountain fa-2x text-gold mb-2"></i>
+                                <h5 data-i18n="comb_soil_title">Upload Soil Image</h5>
+                                <small class="text-muted">Click or drag image here</small>
+                            </div>
+                            <div id="comb-soil-preview-box" class="hidden">
+                                <img id="comb-soil-img" src="" alt="Soil Preview">
+                                <button class="btn-sm btn-danger mt-2" onclick="event.stopPropagation(); resetCombSoil()">Change</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <button class="btn-primary full-width mt-4" onclick="runSideBySideCombinedAnalysis()"><i class="fas fa-brain"></i> <span data-i18n="btn_run_side_combined">Analyze Leaf & Soil Together</span></button>
+                </div>
+
+                <!-- Combined Results Display -->
+                <div id="combined-result-card" class="card hidden mt-4">
+                    <h3 class="text-green"><i class="fas fa-file-medical-alt"></i> <span data-i18n="combined_report_header">Unified Crop & Soil Diagnostic Report</span></h3>
+                    <div id="combined-report-body" class="mt-3"></div>
+                    <button class="btn-secondary mt-3" onclick="window.print()"><i class="fas fa-print"></i> <span data-i18n="btn_print">Print Report</span></button>
+                </div>
+            </section>
+
+            <!-- VIEW 5: FARMER AI CHATBOT -->
+            <section id="view-farmer-chatbot" class="view-section">
+                <div class="card chat-card-container">
+                    <h3><i class="fas fa-comments text-green"></i> <span data-i18n="chat_title">Farmer AI Assistant & Beginner Advisor</span></h3>
+                    <div id="chat-messages" class="chat-box mt-3">
+                        <div class="chat-msg bot">
+                            <i class="fas fa-robot"></i>
+                            <p id="chat-welcome-msg" data-i18n="chat_welcome">Hello Farmer! I am your AI assistant. Which crop or soil type would you like advice on today?</p>
+                        </div>
+                    </div>
+                    <div class="chat-input-bar mt-3">
+                        <input type="text" id="chat-user-input" class="form-control" placeholder="Ask your question..." onkeypress="if(event.key==='Enter') sendChatMessage()">
+                        <button class="btn-primary" onclick="sendChatMessage()"><i class="fas fa-paper-plane"></i></button>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 6: AGRICULTURE OFFICER CONSULTATION -->
+            <section id="view-expert-consult" class="view-section">
+                <div class="card">
+                    <h3><i class="fas fa-user-tie text-green"></i> <span data-i18n="expert_title">Agriculture Officer Consultation Desk</span></h3>
+                    <p class="text-muted" data-i18n="expert_sub">Facing severe pest outbreaks or complex crop distress? Enter your problem below to generate a formal advisory letter and appointment slip for the Agricultural Officer.</p>
+
+                    <div class="form-group mt-3">
+                        <label data-i18n="lbl_issue_title">Describe Your Issue / Crop Distress</label>
+                        <input type="text" id="expert-issue" class="form-control" placeholder="e.g., Rapid leaf blight and yellowing across 2 acres">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="lbl_issue_details">Additional Field Observations</label>
+                        <textarea id="expert-details" class="form-control" rows="3" placeholder="Heavy clay soil, high humidity observed after recent rains..."></textarea>
+                    </div>
+                    <button class="btn-primary" onclick="generateConsultationLetter()"><i class="fas fa-file-signature"></i> <span data-i18n="btn_gen_letter">Generate Officer Request & Letter</span></button>
+
+                    <div id="consultation-result-box" class="hidden mt-4">
+                        <div class="card" style="background: var(--bg-color); border-left: 4px solid var(--primary-green);">
+                            <h4><i class="fas fa-file-alt text-green"></i> <span data-i18n="letter_title">Official Consultation & Advisory Letter</span></h4>
+                            <div id="letter-content" class="mt-2 text-sm" style="white-space: pre-line; line-height: 1.6;"></div>
+                            
+                            <div class="flex-row mt-3 gap-2">
+                                <button class="btn-primary" onclick="downloadLetterText()"><i class="fas fa-download"></i> <span data-i18n="btn_download_letter">Download Letter as Text</span></button>
+                            </div>
+
+                            <hr class="mt-3 mb-3">
+                            <h4><i class="fas fa-map-marker-alt text-gold"></i> <span data-i18n="venue_title">KVK Agricultural Officer Office & Visiting Hours</span></h4>
+                            <p class="mt-1"><strong>Officer in Charge:</strong> Dr. K. R. Ramanathan, M.Sc. (Agri), Chief Agronomist</p>
+                            <p><strong>Office Venue:</strong> State Krishi Vigyan Kendra (KVK) Research Station, Main Agricultural University Campus.</p>
+                            <p><strong>Visiting Hours:</strong> Monday to Friday | 10:00 AM – 01:00 PM</p>
+                            <p><strong>Emergency Helpline:</strong> +91 4362-225010 / extension #402</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- VIEW 7: HISTORY -->
+            <section id="view-history" class="view-section">
+                <div class="card">
+                    <h3 data-i18n="history_title"><i class="fas fa-history text-green"></i> Scan & Analysis History</h3>
+                    <div id="history-list-container" class="mt-4"><p class="text-muted" data-i18n="no_history">No history available.</p></div>
+                </div>
+            </section>
+
+            <!-- VIEW 8: SETTINGS -->
+            <section id="view-settings" class="view-section">
+                <div class="card">
+                    <h3 data-i18n="settings_title"><i class="fas fa-gear text-green"></i> User Profile & Settings</h3>
+                    <div class="form-group mt-3">
+                        <label data-i18n="lbl_farmer_name">Farmer Name</label>
+                        <input type="text" id="settings-name" class="form-control" value="Farmer">
+                    </div>
+                    <div class="form-group">
+                        <label data-i18n="lbl_lang">Preferred Language</label>
+                        <select id="settings-lang" class="form-control" onchange="changeLanguage(this.value)">
+                            <option value="en">English</option>
+                            <option value="ta">தமிழ் (Tamil)</option>
+                            <option value="te">తెలుగు (Telugu)</option>
+                        </select>
+                    </div>
+                    <button class="btn-primary mt-3" onclick="saveSettings()" data-i18n="btn_save">Save Changes</button>
+                </div>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
